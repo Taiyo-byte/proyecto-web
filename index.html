@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Racó de Calma | Estètica Integral i Benestar Natural</title>
+  <meta name="description" content="Centre d'estètica integral. Tractaments facials i corporals, neteges i massatges amb cremes orgàniques pensats per realçar la teva bellesa natural.">
+
+  <!-- Style & Icon Imports -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css?v=6.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* ==========================================================================
+       TEAM BLUEPRINT & OPERATIONAL FLOW (BLUE THEME - EXACT MATCH)
+       ========================================================================== */
+    .team-blueprint-container {
+      border: none !important;
+      background-color: transparent !important;
+      padding: 10px 0 35px 0 !important;
+      max-width: 1140px;
+      margin: 0 auto 50px auto;
+      position: relative;
+      box-shadow: none !important;
+    }
+
+    .team-blueprint-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .team-blueprint-logo {
+      height: 68px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    .team-blueprint-title {
+      font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+      font-size: 2.15rem;
+      font-weight: 700;
+      color: #164360;
+      margin: 0 0 6px 0;
+      letter-spacing: -0.5px;
+    }
+
+    .team-blueprint-subtitle {
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 1rem;
+      color: #426B86;
+      margin: 0;
+    }
+
+    /* 3 Specialist Cards */
+    .team-blueprint-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 22px !important;
+      position: relative;
+      z-index: 2;
+    }
+
+    .team-bp-card {
+      background: #FFFFFF !important;
+      border: 2px solid #74B3CE !important;
+      border-radius: 20px !important;
+      padding: 16px 16px 22px 16px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      box-shadow: 0 6px 20px rgba(116, 179, 206, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-bp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(116, 179, 206, 0.2);
+    }
+
+    .team-bp-pill {
+      background: #4E8EA9 !important;
+      color: #FFFFFF !important;
+      text-align: center;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 9999px;
+      margin: 0 auto 14px auto;
+      width: fit-content;
+      min-width: 180px;
+      box-shadow: 0 4px 12px rgba(78, 142, 169, 0.3);
+    }
+
+    .team-bp-img-wrapper {
+      width: 100% !important;
+      height: 220px !important;
+      border-radius: 14px !important;
+      overflow: hidden !important;
+      margin-bottom: 15px;
+      background: #F4F9FD;
+    }
+
+    .team-bp-img-wrapper img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center 15% !important;
+      display: block !important;
+    }
+
+    .team-bp-role {
+      color: #164360 !important;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.88rem;
+      font-weight: 800;
+      line-height: 1.35;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      text-align: center;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+      padding: 0 4px;
+    }
+
+    .team-bp-list {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 8px;
+      flex-grow: 1;
+    }
+
+    .team-bp-list li {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 8px;
+      font-size: 0.84rem;
+      line-height: 1.45;
+      color: #243D50;
+    }
+
+    .team-bp-bullet {
+      color: #164360 !important;
+      font-weight: 900;
+      font-size: 0.95rem;
+      line-height: 1.1;
+      flex-shrink: 0;
+    }
+
+    /* Connectors (Network of 7 arrows matching original blueprint) */
+    .team-bp-connectors {
+      margin: 6px auto 4px auto;
+      width: 100%;
+      height: 52px;
+      position: relative;
+    }
+
+    .team-bp-svg-arrows {
+      display: block;
+      width: 100%;
+      height: 52px;
+    }
+
+    /* 7 Process Boxes */
+    .team-flow-wrapper {
+      position: relative;
+      width: 100%;
+      margin-top: 2px;
+    }
+
+    .team-flow-chain {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      width: 100%;
+    }
+
+    .team-flow-box {
+      flex: 1;
+      background: #EBF5FB;
+      border: 1.5px solid #74B3CE;
+      border-radius: 10px;
+      padding: 10px 4px;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: #164360;
+      line-height: 1.25;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(116, 179, 206, 0.08);
+    }
+
+    .team-flow-arrow {
+      color: #74B3CE;
+      user-select: none;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+    }
+
+    .team-flow-arrow-svg {
+      display: block;
+    }
+
+    /* External Cleaning Company (NDAVANT) */
+    .team-ndavant-wrapper {
+      position: absolute;
+      top: 100%;
+      left: 35.71%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 3;
+      margin-top: 4px;
+    }
+
+    .team-ndavant-arrow {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .team-ndavant-card {
+      background: #FFFFFF;
+      border: 2px solid #74B3CE;
+      border-radius: 14px;
+      padding: 12px 18px 14px 18px;
+      text-align: center;
+      min-width: 220px;
+      box-shadow: 0 6px 18px rgba(116, 179, 206, 0.15);
+    }
+
+    .team-ndavant-title {
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      color: #164360;
+      line-height: 1.1;
+    }
+
+    .team-ndavant-subtitle {
+      font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #5B9CB8;
+      text-transform: uppercase;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    .team-ndavant-badge {
+      background: #F4F9FD;
+      border: 1.5px solid #A8D5EF;
+      border-radius: 8px;
+      padding: 6px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .team-ndavant-badge-name {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #164360;
+    }
+
+    .team-ndavant-badge-sub {
+      font-size: 0.72rem;
+      color: #4A6878;
+    }
+
+    @media (min-width: 769px) {
+      .team-flow-wrapper {
+        margin-bottom: 155px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .team-blueprint-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 440px;
+        margin: 0 auto;
+      }
+      .team-bp-img-wrapper {
+        height: 260px !important;
+      }
+      .team-bp-connectors {
+        display: none;
+      }
+      .team-flow-chain {
+        flex-direction: column;
+        gap: 8px;
+        max-width: 440px;
+        margin: 25px auto 0 auto;
+      }
+      .team-flow-arrow {
+        transform: rotate(90deg);
+      }
+      .team-ndavant-wrapper {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+        width: 100%;
+      }
+      .team-flow-wrapper {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / NAVBAR (Sticky across all pages)
+       ========================================================================== -->
+  <header class="header">
+    <div class="container navbar">
+      <!-- Official Racó de Calma Logo -->
+      <div class="logo" data-tab="inicio">
+        <img src="images/logo.png" alt="Racó de Calma Estètica Integral" class="navbar-logo-img">
+      </div>
+
+      <!-- Navigation Tabs (Català) -->
+      <ul class="nav-links">
+        <li class="nav-item active" data-tab="inicio"><a href="#inicio" class="nav-link">Inici</a></li>
+        <li class="nav-item" data-tab="tratamientos"><a href="#tratamientos" class="nav-link">Tractaments</a></li>
+        <li class="nav-item" data-tab="servicios"><a href="#servicios" class="nav-link">Serveis</a></li>
+        <li class="nav-item" data-tab="sobre-nosotros"><a href="#sobre-nosotros" class="nav-link">Sobre nosaltres</a></li>
+        <li class="nav-item" data-tab="contacto"><a href="#contacto" class="nav-link">Contacte</a></li>
+      </ul>
+
+      <!-- CTA Reservation Button -->
+      <button class="btn-reserve-header" onclick="openBookingModal()">
+        <i class="far fa-calendar-alt"></i> Reserva la teva cita
+      </button>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Obrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PAGE 1: INICI (HOME PAGE)
+       ========================================================================== -->
+  <main id="tab-inicio" class="tab-page active-page">
+    
+    <!-- Hero Banner -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            CUIDA &nbsp;·&nbsp; RENOVA &nbsp;·&nbsp; BRILLA
+          </div>
+          <h1 class="hero-title">
+            Bellesa que neix
+            <span class="cursive">de la cura</span>
+          </h1>
+          <p class="hero-description">
+            Tractaments facials i corporals, neteges i massatges amb cremes, pensats per realçar la teva bellesa natural i cuidar de tu.
+          </p>
+          <button class="btn-primary-pill" onclick="switchTab('tratamientos')">
+            Descobreix els nostres tractaments 
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-card">
+            <img src="images/hero.png" alt="Racó de Calma Ambient Spa">
+          </div>
+          <div class="floating-drop-emblem" title="Racó de Calma Logo">
+            <img src="images/logo.png" alt="Racó de Calma Logo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,50 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+          <path d="M0,20 C200,80 400,10 600,60 C800,110 1000,30 1200,70 L1200,120 L0,120 Z" fill="rgba(116, 179, 206, 0.15)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Quick Category Bar -->
+    <section class="category-bar-section">
+      <div class="container category-bar-grid">
+        <div class="category-item" onclick="switchTab('tratamientos', 'facials')">
+          <div class="category-icon-circle pink">
+            <i class="fas fa-smile-beam" style="font-size: 1.8rem;"></i>
+          </div>
+          <span class="category-label">TRACTAMENTS I NETEJA FACIAL</span>
+        </div>
+
+        <div class="category-item" onclick="switchTab('tratamientos', 'corporals')">
+          <div class="category-icon-circle blue">
+            <i class="fas fa-female" style="font-size: 1.8rem;"></i>
+          </div>
+          <span class="category-label">TRACTAMENT I NETEJA CORPORAL</span>
+        </div>
+
+        <div class="category-item" onclick="switchTab('tratamientos', 'masatges')">
+          <div class="category-icon-circle pink">
+            <i class="fas fa-hands" style="font-size: 1.8rem;"></i>
+          </div>
+          <span class="category-label">MASSATGES AMB CREMES</span>
+        </div>
+
+        <div class="category-item" onclick="switchTab('tratamientos', 'rituals')">
+          <div class="category-icon-circle blue">
+            <i class="fas fa-spa" style="font-size: 1.8rem;"></i>
+          </div>
+          <span class="category-label">RITUALS DE BENESTAR</span>
+        </div>
+
+        <div class="category-slogan">
+          <p>El teu benestar<br>és la nostra prioritat ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Treatments Section -->
+    <section class="featured-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Els Nostres Preferits</span>
+          <h2 class="section-title">Tractaments Destacats</h2>
+          <p class="section-subtitle">Descobreix les experiències d'estètica més sol·licitades per cuidar la teva pell i relaxar el teu cos.</p>
+        </div>
+
+        <div id="home-treatments-grid" class="treatment-grid">
+          <!-- Populated dynamically by app.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <button class="btn-primary-pill" onclick="switchTab('tratamientos')">
+            Veure catàleg complet de tractaments ⟶
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Experiència Racó de Calma</span>
+          <h2 class="section-title">¿Per què triar-nos?</h2>
+          <p class="section-subtitle">Racó de Calma neix d'una idea senzilla: cuidar el que tenim, respectar el nostre cos i trobar bellesa en la senzillesa.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-leaf"></i></div>
+            <h3 class="why-title">Cosmètica 100% Neta</h3>
+            <p class="why-text">Utilitzem únicament productes orgànics, vegans i lliures de tòxics o parabens agressius.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-user-md"></i></div>
+            <h3 class="why-title">Mans Expertes</h3>
+            <p class="why-text">Esteticistes diplomades en constant formació en les últimes tendències dermatològiques.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-search-plus"></i></div>
+            <h3 class="why-title">Diagnòstic Gratuït</h3>
+            <p class="why-text">Analitzem les necessitats específiques de la teva pell abans de cada sessió sense cost addicional.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="fas fa-heart"></i></div>
+            <h3 class="why-title">Ambient Relaxant</h3>
+            <p class="why-text">Cabines insonoritzades, música suau i aromateràpia per a una desconnexió total durant la teva cita.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Callout Banner -->
+    <section style="padding: 70px 0; background: linear-gradient(135deg, #FDFBF7 0%, #FAF6EE 50%, #F4F9FD 100%);">
+      <div class="container" style="text-align: center;">
+        <h2 class="font-serif" style="font-size: 2.8rem; color: var(--primary-pink-dark); margin-bottom: 16px;">Dona a la teva pell la cura que es mereix</h2>
+        <p style="font-size: 1.1rem; color: var(--text-medium); max-width: 600px; margin: 0 auto 30px auto;">
+          Reserva avui el teu tractament facial o massatge corporal i gaudeix d'un moment de pau en un entorn dissenyat per a tu.
+        </p>
+        <button class="btn-reserve-header" style="font-size: 1.05rem; padding: 16px 36px;" onclick="openBookingModal()">
+          <i class="far fa-calendar-alt"></i> Reservar cita online ara
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PAGE 2: TRACTAMENTS (FULL CATALOG PAGE WITH EXACT 4 CATEGORY BUTTONS)
+       ========================================================================== -->
+  <main id="tab-tratamientos" class="tab-page">
+    
+    <!-- Dedicated Hero Header for Tractaments Page -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            CUIDA &nbsp;·&nbsp; RENOVA &nbsp;·&nbsp; BRILLA
+          </div>
+          <h1 class="hero-title">
+            Els Nostres Tractaments,
+            <span class="cursive">cuida cada detall</span>
+          </h1>
+          <p class="hero-description">
+            Explora el nostre menú d'estètica integral. Cada tractament està formulat amb actius botànics orgànics per revitalitzar i restaurar la teva pell.
+          </p>
+          <button class="btn-primary-pill" onclick="openBookingModal()">
+            Reservar una cita ara ⟶
+          </button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-card">
+            <img src="images/facial.png" alt="Tractaments Facials i Corporals">
+          </div>
+          <div class="floating-drop-emblem" title="Racó de Calma Logo">
+            <img src="images/logo.png" alt="Racó de Calma Logo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,50 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+          <path d="M0,20 C200,80 400,10 600,60 C800,110 1000,30 1200,70 L1200,120 L0,120 Z" fill="rgba(116, 179, 206, 0.15)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="featured-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Catàleg Complet</span>
+          <h2 class="section-title">Trobada el teu Tractament Ideal</h2>
+          <p class="section-subtitle">Tria una categoria per veure els tractaments disponibles. Fes clic a "Saber-ne més" per consultar beneficis i procediment.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-box-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="treatment-search-input" class="search-input" placeholder="Cercar per nom (ex: Neteja Facial, Resplendor Pur, Massatge)...">
+        </div>
+
+        <!-- EXACTLY 4 CATEGORY BUTTONS AS REQUESTED -->
+        <div class="treatment-filters">
+          <button class="filter-btn active" data-filter="facials">Tractaments i neteja facial</button>
+          <button class="filter-btn" data-filter="corporals">Tractament i neteja corporal</button>
+          <button class="filter-btn" data-filter="masatges">Massatges amb cremes</button>
+          <button class="filter-btn" data-filter="rituals">Rituals de benestar</button>
+        </div>
+
+        <!-- Treatments Grid -->
+        <div id="all-treatments-grid" class="treatment-grid">
+          <!-- Populated dynamically -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PAGE 3: SERVEIS (SERVEIS, PACKS & GIFTS IN CATALAN)
+       ========================================================================== -->
+  <main id="tab-servicios" class="tab-page">
+    
+    <!-- Dedicated Hero Header for Serveis Page -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            DIAGNÒSTIC &nbsp;·&nbsp; PACKS &nbsp;·&nbsp; TARGETES REGAL
+          </div>
+          <h1 class="hero-title">
+            Serveis Exclusius,
+            <span class="cursive">experiències a la teva mida</span>
+          </h1>
+          <p class="hero-description">
+            Descobreix les nostres promocions especials, realitza el test de diagnòstic intel·ligent de pell o dissenya una targeta de regal personalitzada.
+          </p>
+          <button class="btn-primary-pill" onclick="document.getElementById('quiz-anchor').scrollIntoView({behavior: 'smooth'})">
+            Fer Test de Pell ⟶
+          </button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-card">
+            <img src="images/massage.png" alt="Serveis i Packs Especialss">
+          </div>
+          <div class="floating-drop-emblem" title="Racó de Calma Logo">
+            <img src="images/logo.png" alt="Racó de Calma Logo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,50 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+          <path d="M0,20 C200,80 400,10 600,60 C800,110 1000,30 1200,70 L1200,120 L0,120 Z" fill="rgba(116, 179, 206, 0.15)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section style="padding: 70px 0;">
+      <div class="container">
+        
+        <!-- Interactive Skin Quiz Component -->
+        <div id="quiz-anchor" class="quiz-banner-card">
+          <div class="quiz-content">
+            <span class="section-tag">Test Diagnòstic Interactiu</span>
+            <h3>¿No saps quin tractament necessita la teva pell?</h3>
+            <p>Respon a 2 senzilles preguntes i el nostre recomanador intel·ligent t'indicarà el ritual perfecte per a les teves necessitats.</p>
+            
+            <div id="quiz-result" class="quiz-interactive-box" style="display:none;"></div>
+          </div>
+
+          <div class="quiz-interactive-box">
+            <div id="quiz-step-1" class="quiz-step active">
+              <div class="quiz-question">1. Quin és el principal objectiu per al teu rostre?</div>
+              <div class="quiz-options">
+                <button class="quiz-option-btn" onclick="quizAnswer(1, 'limpieza')">✨ Eliminar punts negres i impureses</button>
+                <button class="quiz-option-btn" onclick="quizAnswer(1, 'deshidratada')">💧 Aportar hidratació intensa i sucositat</button>
+                <button class="quiz-option-btn" onclick="quizAnswer(1, 'arrugas')">🌸 Reafirmar i suavitzar línies d'expressió</button>
+              </div>
+            </div>
+
+            <div id="quiz-step-2" class="quiz-step">
+              <div class="quiz-question">2. Com sents la teva pell al final del dia?</div>
+              <div class="quiz-options">
+                <button class="quiz-option-btn" onclick="quizAnswer(2, 'sensible')">🌸 Tirant o amb tendència a vermellors</button>
+                <button class="quiz-option-btn" onclick="quizAnswer(2, 'brillos')">✨ Amb brillantors a la zona T</button>
+                <button class="quiz-option-btn" onclick="quizAnswer(2, 'apagada')">🌫️ Apagada i falta de to o vitalitat</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Special Packs Section -->
+        <div class="section-header" style="margin-top: 60px;">
+          <span class="section-tag">Promocions Especialss</span>
+          <h2 class="section-title">Packs & Bonos d'Estètica</h2>
+          <p class="section-subtitle">Gaudeix de tarifes especials en combinar diverses sessions o regalar experiències inoblidables.</p>
+        </div>
+
+        <div class="treatment-grid" style="margin-bottom: 70px;">
+          <div class="treatment-card">
+            <div class="card-img-wrapper">
+              <img src="images/facial.png" alt="Pack Nuvis">
+              <span class="card-badge">Pack Especial</span>
+              <span class="card-price-tag">95€</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Ritual Núvia Radiant (3 Sessions)</h3>
+              <p class="card-desc">Inclou Neteja Facial completa, Resplendor Pur i Tractament Il·luminador amb Vitamina C abans de l'esdeveniment.</p>
+              <button class="btn-card-book" onclick="startBookingWithService('fac-neteja-completa')">Reservar Pack</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="card-img-wrapper">
+              <img src="images/massage.png" alt="Bono Massatges">
+              <span class="card-badge">Bono Estalvi</span>
+              <span class="card-price-tag">210€</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Bono 5 Sessions Massatge Corporal</h3>
+              <p class="card-desc">Bono de 5 massatges amb cremes nutritives a triar (descontracturant, aromateràpia o relaxant). Estalvies 65€.</p>
+              <button class="btn-card-book" onclick="startBookingWithService('mas-aromaterapia')">Reservar Bono</button>
+            </div>
+          </div>
+
+          <div class="treatment-card">
+            <div class="card-img-wrapper">
+              <img src="images/hero.png" alt="Spa Duo">
+              <span class="card-badge">Experiència Dúo</span>
+              <span class="card-price-tag">110€</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Experiència Spa Dúo en Parella</h3>
+              <p class="card-desc">Massatge en cabina doble per a dues persones amb aromateràpia, cremes hidratants i copa de te relaxant al finalitzar.</p>
+              <button class="btn-card-book" onclick="startBookingWithService('mas-aromaterapia')">Reservar Cita Dúo</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Gift Card Generator -->
+        <div class="section-header">
+          <span class="section-tag">Regala Benestar</span>
+          <h2 class="section-title">Targetes de Regal Personalitzades</h2>
+          <p class="section-subtitle">Crea en temps real un bono regal personalitzat i envia'l a l'instant per correu o imprimeix-lo.</p>
+        </div>
+
+        <div class="gift-card-builder">
+          <div class="gift-form">
+            <div class="form-group">
+              <label class="form-label">Per a (Nom de la persona regalada):</label>
+              <input type="text" id="gift-to" class="form-control" placeholder="Ex: María López">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">De part de:</label>
+              <input type="text" id="gift-from" class="form-control" placeholder="Ex: La teva germana Ana">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Import del Bono (€):</label>
+              <select id="gift-amount" class="form-control">
+                <option value="33" selected>33€ - Neteja Facial Completa</option>
+                <option value="35">35€ - Equilibri Hidràtic / Pell Calmada</option>
+                <option value="40">40€ - Resplendor Pur</option>
+                <option value="75">75€ - Ritual Benestar Racó de Calma</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Dedicatòria / Missatge especial:</label>
+              <textarea id="gift-msg" class="form-control" placeholder="Escriu unes paraules amables...">¡Et mereixes un moment de desconnexió total i mimos per a la teva pell!</textarea>
+            </div>
+
+            <button class="btn-primary-pill" style="width: 100%; justify-content: center;" onclick="buyGiftCard()">
+              <i class="fas fa-gift"></i> Generar i Enviar Bono Regal
+            </button>
+          </div>
+
+          <div class="gift-preview-voucher">
+            <div>
+              <div class="voucher-brand">RACÓ DE CALMA</div>
+              <div style="font-size: 0.75rem; letter-spacing: 2px;">ESTÈTICA INTEGRAL · BONO REGAL</div>
+            </div>
+
+            <div>
+              <div class="voucher-amount" id="preview-amount">33€</div>
+              <div class="voucher-to">Per a: <strong id="preview-to">María López</strong></div>
+              <div class="voucher-to">De part de: <strong id="preview-from">Ana</strong></div>
+              <div class="voucher-message" id="preview-msg">"¡Gaudeix d'un moment per a tu!"</div>
+            </div>
+
+            <div style="font-size: 0.75rem; opacity: 0.8; display: flex; justify-content: space-between;">
+              <span>Vàlid per 12 mesos</span>
+              <span>RacoDeCalma.cat</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PAGE 4: SOBRE NOSALTRES (ABOUT US PAGE IN CATALAN)
+       ========================================================================== -->
+  <main id="tab-sobre-nosotros" class="tab-page">
+    
+    <!-- Dedicated Hero Header for Sobre Nosaltres Page -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            LA NOSTRA HISTÒRIA &nbsp;·&nbsp; VALORS &nbsp;·&nbsp; ESPAI
+          </div>
+          <h1 class="hero-title">
+            Racó de Calma:
+            <span class="cursive">cuidem de tu, per dins i per fora</span>
+          </h1>
+          <p class="hero-description">
+            Som un equip d’esteticistes apassionades per la bellesa i el benestar. Ens caracteritzem per la nostra professionalitat, dedicació i tracte proper. Ens agrada cuidar cada detall i oferir a cada client una experiència de relaxació i confiança.
+          </p>
+          <button class="btn-primary-pill" onclick="document.getElementById('gallery-anchor').scrollIntoView({behavior: 'smooth'})">
+            Veure les nostres instal·lacions ⟶
+          </button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-card">
+            <img src="images/team.jpg" alt="Equip d'esteticistes Racó de Calma" style="object-position: center 20%;">
+          </div>
+          <div class="floating-drop-emblem" title="Racó de Calma Logo">
+            <img src="images/logo.png" alt="Racó de Calma Logo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,50 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+          <path d="M0,20 C200,80 400,10 600,60 C800,110 1000,30 1200,70 L1200,120 L0,120 Z" fill="rgba(116, 179, 206, 0.15)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Bio & Gallery Section -->
+    <section style="padding: 70px 0;">
+      <div class="container">
+        
+        <!-- Team Blueprint Container (100% Blue Layout as requested) -->
+        <div class="team-blueprint-container">
+          
+          <!-- Blueprint Header -->
+          <div class="team-blueprint-header">
+            <img src="images/logo.png" alt="Racó de Calma Logo" class="team-blueprint-logo">
+            <h2 class="team-blueprint-title">El Nostre Equip d'Especialistes</h2>
+            <p class="team-blueprint-subtitle">Tres sòcies apassionades per la cura, la bellesa neta i el benestar integral.</p>
+          </div>
+
+          <!-- Three Specialist Cards Grid (All Blue) -->
+          <div class="team-blueprint-grid">
+            
+            <!-- LARA BILC -->
+            <div class="team-bp-card">
+              <div class="team-bp-pill">LARA BILC</div>
+              <div class="team-bp-img-wrapper">
+                <img src="images/lara.png" alt="Lara Bilc - Directora d'Higiene i Tractaments Corporals" loading="lazy">
+              </div>
+              <div class="team-bp-role">
+                DIRECTORA D'HIGIENE I<br>TRACTAMENTS CORPORALS
+              </div>
+              <ul class="team-bp-list">
+                <li><span class="team-bp-bullet">•</span><span>Realitza higienes i tractaments corporals.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Aplica exfoliacions i tractaments hidratants corporals.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Prepara i desinfecta la cabina i els materials.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Assessora els clients sobre la cura corporal.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Controla els productes i els protocols d'higiene i seguretat.</span></li>
+              </ul>
+            </div>
+
+            <!-- ROSER BOLOIX -->
+            <div class="team-bp-card">
+              <div class="team-bp-pill">ROSER BOLOIX</div>
+              <div class="team-bp-img-wrapper">
+                <img src="images/roser.png" alt="Roser Boloix - Directora de Massatges" loading="lazy">
+              </div>
+              <div class="team-bp-role">
+                DIRECTORA DE MASSATGES
+              </div>
+              <ul class="team-bp-list">
+                <li><span class="team-bp-bullet">•</span><span>Organitza i coordina els serveis de massatges.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Realitza massatges relaxants i descontracturants.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Valora les necessitats dels clients i recomana el massatge adequat.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Garanteix higiene i confort i el benestar durant les sessions.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Gestiona les cites i el material de la cabina de massatges.</span></li>
+              </ul>
+            </div>
+
+            <!-- ANDREA DUMITRU -->
+            <div class="team-bp-card">
+              <div class="team-bp-pill">ANDREA DUMITRU</div>
+              <div class="team-bp-img-wrapper">
+                <img src="images/andrea.png" alt="Andrea Dumitru - Directora d'Higiene i Tractaments Facials i Màrqueting" loading="lazy">
+              </div>
+              <div class="team-bp-role">
+                DIRECTORA D'HIGIENE I<br>TRACTAMENTS FACIALS I MÀRQUETING
+              </div>
+              <ul class="team-bp-list">
+                <li><span class="team-bp-bullet">•</span><span>Realitza higienes facials i tractaments adaptats a cada tipus de pell.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Recomana productes i rutines de cura facial.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Prepara i manté neta la cabina facial.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Gestiona les xarxes socials i la publicitat del centre.</span></li>
+                <li><span class="team-bp-bullet">•</span><span>Crea promocions, dissenya cartells i infografies i dona a conèixer els serveis.</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Connecting Arrows between Cards & Process Flow (Complete network matching original reference) -->
+          <div class="team-bp-connectors">
+            <svg class="team-bp-svg-arrows" viewBox="0 0 1000 52" preserveAspectRatio="none">
+              <defs>
+                <marker id="bp-arrow-head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#74B3CE" />
+                </marker>
+              </defs>
+              <!-- 1. Lara to RECEPCIÓ (straight vertical arrow) -->
+              <line x1="214.3" y1="0" x2="214.3" y2="44" stroke="#74B3CE" stroke-width="2.2" marker-end="url(#bp-arrow-head)" />
+
+              <!-- 2 & 3. Lara & Roser to SERVEI NETEJA (V-shape converging into SERVEI NETEJA) -->
+              <line x1="295" y1="0" x2="357.1" y2="34" stroke="#74B3CE" stroke-width="2.2" />
+              <line x1="420" y1="0" x2="357.1" y2="34" stroke="#74B3CE" stroke-width="2.2" />
+              <line x1="357.1" y1="34" x2="357.1" y2="44" stroke="#74B3CE" stroke-width="2.2" marker-end="url(#bp-arrow-head)" />
+
+              <!-- 4. Roser to GESTIÓ DE VENDES (straight vertical arrow) -->
+              <line x1="500" y1="0" x2="500" y2="44" stroke="#74B3CE" stroke-width="2.2" marker-end="url(#bp-arrow-head)" />
+
+              <!-- 5 & 6. Roser & Andrea to GESTIÓ AGENDA (V-shape converging into GESTIÓ AGENDA) -->
+              <line x1="580" y1="0" x2="642.9" y2="34" stroke="#74B3CE" stroke-width="2.2" />
+              <line x1="705" y1="0" x2="642.9" y2="34" stroke="#74B3CE" stroke-width="2.2" />
+              <line x1="642.9" y1="34" x2="642.9" y2="44" stroke="#74B3CE" stroke-width="2.2" marker-end="url(#bp-arrow-head)" />
+
+              <!-- 7. Andrea to GESTIÓ COMPRES (straight vertical arrow) -->
+              <line x1="785.7" y1="0" x2="785.7" y2="44" stroke="#74B3CE" stroke-width="2.2" marker-end="url(#bp-arrow-head)" />
+            </svg>
+          </div>
+
+          <!-- Operations Process Chain (7 light blue boxes with arrows) -->
+          <div class="team-flow-wrapper">
+            <div class="team-flow-chain">
+              
+              <div class="team-flow-box">ATENCIÓ AL CLIENT</div>
+              <div class="team-flow-arrow">
+                <svg class="team-flow-arrow-svg" viewBox="0 0 16 12" width="16" height="12"><path d="M1 6 H14 M9 2 L14 6 L9 10" fill="none" stroke="#74B3CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </div>
+
+              <div class="team-flow-box">RECEPCIÓ</div>
+              <div class="team-flow-arrow">
+                <svg class="team-flow-arrow-svg" viewBox="0 0 16 12" width="16" height="12"><path d="M1 6 H14 M9 2 L14 6 L9 10" fill="none" stroke="#74B3CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </div>
+
+              <div class="team-flow-box">SERVEI NETEJA</div>
+              <div class="team-flow-arrow">
+                <svg class="team-flow-arrow-svg" viewBox="0 0 16 12" width="16" height="12"><path d="M1 6 H14 M9 2 L14 6 L9 10" fill="none" stroke="#74B3CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </div>
+
+              <div class="team-flow-box">GESTIÓ DE VENDES</div>
+              <div class="team-flow-arrow">
+                <svg class="team-flow-arrow-svg" viewBox="0 0 16 12" width="16" height="12"><path d="M1 6 H14 M9 2 L14 6 L9 10" fill="none" stroke="#74B3CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </div>
+
+              <div class="team-flow-box">GESTIÓ AGENDA</div>
+              <div class="team-flow-arrow">
+                <svg class="team-flow-arrow-svg" viewBox="0 0 16 12" width="16" height="12"><path d="M1 6 H14 M9 2 L14 6 L9 10" fill="none" stroke="#74B3CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </div>
+
+              <div class="team-flow-box">GESTIÓ COMPRES</div>
+              <div class="team-flow-arrow">
+                <svg class="team-flow-arrow-svg" viewBox="0 0 16 12" width="16" height="12"><path d="M1 6 H14 M9 2 L14 6 L9 10" fill="none" stroke="#74B3CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </div>
+
+              <div class="team-flow-box">GESTIÓ XARXES SOCIALS</div>
+
+            </div>
+
+            <!-- External Cleaning Card (NDAVANT) directly below SERVEI NETEJA -->
+            <div class="team-ndavant-wrapper">
+              <svg class="team-ndavant-arrow" viewBox="0 0 20 28" width="20" height="28">
+                <defs>
+                  <marker id="bp-arrow-down" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#74B3CE" />
+                  </marker>
+                </defs>
+                <line x1="10" y1="0" x2="10" y2="20" stroke="#74B3CE" stroke-width="2.5" marker-end="url(#bp-arrow-down)" />
+              </svg>
+
+              <div class="team-ndavant-card">
+                <div class="team-ndavant-title">NDAVANT</div>
+                <div class="team-ndavant-subtitle">MULTISERVEIS</div>
+                <div class="team-ndavant-badge">
+                  <span class="team-ndavant-badge-name">NDAVANT</span>
+                  <span class="team-ndavant-badge-sub">Empresa externa de neteja</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-anchor" class="section-header" style="margin-top: 60px;">
+          <span class="section-tag">El Nostre Centre</span>
+          <h2 class="section-title">Un espai pensat per relaxar-te</h2>
+          <p class="section-subtitle">Instal·lacions acollidores, llum càlida, aromes botànics i higiene rigorosa a cada racó.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/hero.png" alt="Cabina de Tractament">
+          </div>
+          <div class="gallery-item">
+            <img src="images/facial.png" alt="Zona de Tractament Facial">
+          </div>
+          <div class="gallery-item">
+            <img src="images/massage.png" alt="Espai de Massatge">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PAGE 5: CONTACTE (CONTACT PAGE & FAQS IN CATALAN)
+       ========================================================================== -->
+  <main id="tab-contacto" class="tab-page">
+    
+    <!-- Dedicated Hero Header for Contacte Page -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-subtitle">
+            CITA ONLINE &nbsp;·&nbsp; WHATSAPP &nbsp;·&nbsp; UBICACIÓ
+          </div>
+          <h1 class="hero-title">
+            Contacta amb nosaltres,
+            <span class="cursive">estem per ajudar-te</span>
+          </h1>
+          <p class="hero-description">
+            ¿Tens qualsevol consulta o vols reservar la teva cita? Escriu-nos directament per WhatsApp, omple el formulari o visita'ns al nostre centre.
+          </p>
+          <button class="btn-primary-pill" onclick="openBookingModal()">
+            Reservar Cita Online ⟶
+          </button>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-card">
+            <img src="images/hero.png" alt="Atenció i Contacte Racó de Calma">
+          </div>
+          <div class="floating-drop-emblem" title="Racó de Calma Logo">
+            <img src="images/logo.png" alt="Racó de Calma Logo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Divider -->
+      <div class="hero-wave-container">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,50 L1200,120 L0,120 Z" fill="#FFFFFF"></path>
+          <path d="M0,20 C200,80 400,10 600,60 C800,110 1000,30 1200,70 L1200,120 L0,120 Z" fill="rgba(116, 179, 206, 0.15)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form Section -->
+    <section style="padding: 70px 0;">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">¿Parlem?</span>
+          <h2 class="section-title">Informació & Formulari</h2>
+          <p class="section-subtitle">Estem encantades d'atendre't. Demana la teva cita per la web, envia'ns un WhatsApp o visita'ns al nostre centre.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-details">
+                <h4>Adreça</h4>
+                <p>Carrer de l'Estètica 14, Barcelona</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-details">
+                <h4>Telèfon & WhatsApp</h4>
+                <p>+34 932 345 678 &nbsp;|&nbsp; +34 600 123 456</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="far fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Correu Electrònic</h4>
+                <p>hola@racodecalma.cat</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="far fa-clock"></i></div>
+              <div class="contact-details">
+                <h4>Horari d'Atenció</h4>
+                <p>Dilluns a Divendres: 09:30 - 20:00h<br>Dissabtes: 10:00 - 14:00h<br>Diumenges: Tancat</p>
+              </div>
+            </div>
+
+            <a href="https://wa.me/34600000000?text=Hola%20Rac%C3%B3%20de%20Calma,%20voldria%20demanar%20informaci%C3%B3" target="_blank" class="btn-primary-pill" style="width: 100%; justify-content: center; background: #25D366; box-shadow: 0 4px 15px rgba(37,211,102,0.3); margin-top: 10px;">
+              <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Enviar missatge per WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-form-card">
+            <h3 class="font-serif" style="font-size: 2rem; color: var(--primary-pink-dark); margin-bottom: 20px;">Envia'ns una consulta</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label">Nom complet *</label>
+                <input type="text" class="form-control" required placeholder="Ex: Laura García">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Telèfon de contacte *</label>
+                <input type="tel" class="form-control" required placeholder="600 000 000">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Correu electrònic *</label>
+                <input type="email" class="form-control" required placeholder="exemple@email.cat">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Missatge o dubte</label>
+                <textarea class="form-control" required placeholder="En què et podem ajudar?"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-pill" style="width: 100%; justify-content: center;">
+                Enviar missatge ⟶
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- FAQ Section Accordion in Catalan -->
+        <div class="faq-section">
+          <div class="section-header" style="margin-bottom: 30px;">
+            <span class="section-tag">Dubtes Freqüents</span>
+            <h2 class="section-title">Preguntes Freqüents</h2>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Amb quanta antelació he de reservar cita?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              Recomanem reservar amb 48 a 72 hores d'antelació per assegurar l'hora desitjada, especialment en horari de tarda o dissabtes pel matí.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Què passa si necessito canviar o cancel·lar la meva cita?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              Pots modificar o cancel·lar la teva cita sense cap cost amb un mínim de 24 hores d'antelació avisant-nos per telèfon o WhatsApp.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Em puc fer un tractament si tinc la pell molt sensible?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              iTant que sí! Tots els nostres productes són 100% orgànics i hipoal·lèrgics. Abans de començar realitzem un diagnòstic previ per adaptar la cosmètica a les teves necessitats.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-header">
+              <span>Quines són les formes de pagament acceptades?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-body">
+              Acceptem targeta de crèdit/dèbit, efectiu, Bizum i pagament online en reservar per la web.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       INTERACTIVE BOOKING MODAL (CATALÀ)
+       ========================================================================== -->
+  <div id="booking-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 class="modal-title">Reserva la teva Cita Online</h3>
+          <p style="font-size: 0.85rem; color: var(--text-medium);">Racó de Calma · Estètica Integral</p>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('booking-modal')">&times;</button>
+      </div>
+
+      <div class="wizard-steps">
+        <div class="wizard-step-item active">
+          <div class="step-num">1</div>
+          <span>Tractament</span>
+        </div>
+        <div class="wizard-step-item">
+          <div class="step-num">2</div>
+          <span>Data & Hora</span>
+        </div>
+        <div class="wizard-step-item">
+          <div class="step-num">3</div>
+          <span>Les teves Dades</span>
+        </div>
+        <div class="wizard-step-item">
+          <div class="step-num">4</div>
+          <span>Confirmació</span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="wizard-content-step active">
+          <h4 style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 16px;">Selecciona el tractament desitjat:</h4>
+          <div id="booking-service-grid" class="service-select-grid"></div>
+        </div>
+
+        <div class="wizard-content-step">
+          <h4 style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 14px;">Tria especialista i horari:</h4>
+          <div class="form-group">
+            <label class="form-label">Especialista recomanada:</label>
+            <select id="booking-specialist-select" class="form-control">
+              <option value="Lara Bilc (Directora de Corporals)">Lara Bilc - Directora d'Higiene i Tractaments Corporals</option>
+              <option value="Roser Boloix (Directora de Massatges)">Roser Boloix - Directora de Massatges</option>
+              <option value="Andrea Dumitru (Directora de Facials i Màrqueting)">Andrea Dumitru - Directora d'Higiene i Tractaments Facials i Màrqueting</option>
+              <option value="Qualsevol especialista disponible">Qualsevol especialista disponible</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Selecciona la data:</label>
+            <input type="date" id="booking-date-input" class="form-control">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Horaris disponibles per a la data triada:</label>
+            <div class="time-slots-grid">
+              <button class="time-slot-btn" onclick="selectTimeSlot(this, '09:30')">09:30 h</button>
+              <button class="time-slot-btn" onclick="selectTimeSlot(this, '11:00')">11:00 h</button>
+              <button class="time-slot-btn" onclick="selectTimeSlot(this, '12:30')">12:30 h</button>
+              <button class="time-slot-btn" onclick="selectTimeSlot(this, '16:00')">16:00 h</button>
+              <button class="time-slot-btn" onclick="selectTimeSlot(this, '17:30')">17:30 h</button>
+              <button class="time-slot-btn" onclick="selectTimeSlot(this, '19:00')">19:00 h</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="wizard-content-step">
+          <h4 style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 16px;">Les teves dades de contacte:</h4>
+          <div class="form-group">
+            <label class="form-label">Nom i Cognoms *</label>
+            <input type="text" id="booking-name" class="form-control" placeholder="Ex: Carme Rodríguez">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telèfon mòbil (per confirmar per WhatsApp) *</label>
+            <input type="tel" id="booking-phone" class="form-control" placeholder="600 123 456">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email de recepció de recordatori *</label>
+            <input type="email" id="booking-email" class="form-control" placeholder="carme@exemple.cat">
+          </div>
+          <div class="form-group">
+            <label class="form-label">¿Alguna al·lèrgia o preferència especial?</label>
+            <textarea id="booking-notes" class="form-control" placeholder="Escriu aquí qualsevol indicació prèvia..."></textarea>
+          </div>
+        </div>
+
+        <div class="wizard-content-step">
+          <div id="booking-summary-box"></div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="wizard-back-btn" class="btn-secondary" onclick="prevBookingStep(currentBookingStep - 1)" style="visibility: hidden;">
+          ← Tornar
+        </button>
+        <button id="wizard-next-btn-1" class="btn-primary-pill" style="padding: 10px 24px; font-size: 0.9rem;" onclick="nextBookingStep(currentBookingStep + 1)">
+          Següent ⟶
+        </button>
+        <button id="wizard-finish-btn" class="btn-primary-pill" style="display: none; padding: 10px 24px; font-size: 0.9rem; background: var(--primary-pink-dark);" onclick="finalizeBooking()">
+          ✓ Confirmar Cita Online
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TREATMENT DETAIL MODAL (CATALÀ)
+       ========================================================================== -->
+  <div id="treatment-detail-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span id="detail-modal-category" style="font-size: 0.8rem; font-weight: 700; color: var(--primary-pink-dark); text-transform: uppercase;">Categoria</span>
+          <h3 id="detail-modal-title" class="modal-title">Títol del Tractament</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('treatment-detail-modal')">&times;</button>
+      </div>
+
+      <div class="modal-body" style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 24px;">
+        <div>
+          <img id="detail-modal-img" src="" alt="Tractament" style="width: 100%; border-radius: var(--radius-md); height: 200px; object-fit: cover;">
+          <div style="margin-top: 16px; background: var(--primary-pink-light); padding: 14px; border-radius: var(--radius-sm); display: flex; justify-content: space-between; font-weight: 700;">
+            <span>Preu: <span id="detail-modal-price" style="color: var(--primary-pink-dark);"></span></span>
+            <span>Durada: <span id="detail-modal-duration" style="color: var(--primary-blue-dark);"></span></span>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 8px;">Descripció del procediment</h4>
+          <p id="detail-modal-desc" style="font-size: 0.92rem; color: var(--text-medium); line-height: 1.6; margin-bottom: 16px; white-space: pre-line;"></p>
+
+          <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 8px;">Beneficis clau</h4>
+          <ul id="detail-modal-benefits" style="list-style: none; font-size: 0.9rem; color: var(--text-medium); margin-bottom: 16px;"></ul>
+
+          <h4 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 4px;">Recomanat per a:</h4>
+          <p id="detail-modal-skintype" style="font-size: 0.88rem; color: var(--primary-blue-dark); font-weight: 600;"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-secondary" onclick="closeModal('treatment-detail-modal')">Tancar</button>
+        <button id="detail-modal-book-btn" class="btn-primary-pill" style="padding: 10px 24px; font-size: 0.9rem;">
+          Reservar aquest tractament ⟶
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/34600000000?text=Hola%20Rac%C3%B3%20de%20Calma,%20voldria%20reservar%20una%20cita" target="_blank" class="whatsapp-float" title="Contactar per WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER (CATALÀ)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Racó de Calma Logo" style="height: 70px; width: auto; display: block; margin-bottom: 16px; filter: brightness(1.2) drop-shadow(0 2px 8px rgba(255,255,255,0.3));">
+          <p>Estètica integral i benestar natural. Tractaments personalitzats pensats per cuidar la salut de la teva pell en un ambient càlid i serè.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegació</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio" onclick="switchTab('inicio')">Inici</a></li>
+            <li><a href="#tratamientos" onclick="switchTab('tratamientos')">Tractaments</a></li>
+            <li><a href="#servicios" onclick="switchTab('servicios')">Serveis & Packs</a></li>
+            <li><a href="#sobre-nosotros" onclick="switchTab('sobre-nosotros')">Sobre nosaltres</a></li>
+            <li><a href="#contacto" onclick="switchTab('contacto')">Contacte</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tractaments</h4>
+          <ul class="footer-links">
+            <li><a href="#tratamientos" onclick="switchTab('tratamientos', 'facials')">Neteja Facial completa</a></li>
+            <li><a href="#tratamientos" onclick="switchTab('tratamientos', 'facials')">Resplendor Pur</a></li>
+            <li><a href="#tratamientos" onclick="switchTab('tratamientos', 'facials')">Equilibri Hidràtic</a></li>
+            <li><a href="#tratamientos" onclick="switchTab('tratamientos', 'facials')">Pell Calmada</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacte</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 8px;">Carrer de l'Estètica 14, Barcelona</p>
+          <p style="font-size: 0.88rem; margin-bottom: 8px;">Tel: +34 932 345 678</p>
+          <p style="font-size: 0.88rem; margin-bottom: 8px;">WhatsApp: +34 600 123 456</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Racó de Calma Estètica Integral. Tots els drets reservats.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+</html>
